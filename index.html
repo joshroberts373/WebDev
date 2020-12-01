@@ -44,6 +44,10 @@
             background-color: rgb(92, 209, 25);
             color: black;
           }
+          .dark-mode {
+  background-color: black;
+  color: white;
+}
 
           
           </style>
@@ -59,6 +63,14 @@
     <div class="button">
       <p><a class="buton-one" href="https://www.google.com" target="_blank">google</a></p>
     </div>
+    <div> <button onclick="myFunction()">Toggle dark mode</button>
+
+      <script>
+      function myFunction() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+      }
+      </script></div>
   
 </body>
 
