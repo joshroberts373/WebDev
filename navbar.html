@@ -134,4 +134,72 @@
 </body>
 </html>
 
-        
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {
+      background-color: black;
+      font-family: cursive;
+    }
+    
+    .glow {
+      font-size: 80px;
+      color: #fff;
+      text-align: center;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+    
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+      }
+      
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+      }
+    }
+    </style>
+    </head>
+    <body>
+    
+    <h1 class="glow">GLOWING TEXT</h1>
+         
+    </body>
+    </html>  
+    
+    <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.zoom {
+  padding: 50px;
+  background-color: rgb(197, 21, 21);
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+</style>
+</head>
+<body>
+
+<h1>Zoom on Hover</h1>
+<p>Hover over the div element.</p>
+  
+<div class="zoom"></div>
+
+</body>
+</html>
